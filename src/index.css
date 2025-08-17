@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Poppins', 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #1A1A1A;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary-400 hover:bg-primary-500 text-white font-medium py-2 px-4 rounded-lg transition-colors duration-200 shadow-sm;
+  }
+  
+  .btn-secondary {
+    @apply bg-white hover:bg-gray-50 text-text-primary border border-border font-medium py-2 px-4 rounded-lg transition-colors duration-200 shadow-sm;
+  }
+  
+  .card {
+    @apply bg-white rounded-lg shadow-md border border-border overflow-hidden;
+  }
+  
+  .input-field {
+    @apply w-full px-3 py-2 border border-border rounded-md focus:outline-none focus:ring-2 focus:ring-secondary-500 focus:border-transparent transition-colors duration-200;
+  }
+  
+  /* Product card enhancements */
+  .product-card-hover {
+    @apply hover:shadow-xl hover:scale-105 transition-all duration-300 ease-in-out transform;
+  }
+  
+  .product-image-hover {
+    @apply group-hover:scale-110 transition-transform duration-300;
+  }
+  
+  .star-rating {
+    @apply text-yellow-400;
+  }
+  
+  .star-rating-empty {
+    @apply text-gray-300;
+  }
+}
+
+

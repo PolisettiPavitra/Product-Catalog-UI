@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrintPro - Project Demo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center space-x-2">
+                    <div class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
+                        <span class="text-white font-bold text-lg">P</span>
+                    </div>
+                    <span class="text-xl font-bold text-gray-900">PrintPro</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#" class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">Products</a>
+                    <a href="#" class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">Business Cards</a>
+                    <a href="#" class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">Flyers</a>
+                    <a href="#" class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">Banners</a>
+                </div>
+                <div class="relative p-2 text-gray-700 hover:text-blue-600">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4m0 0L7 13m0 0l-2.5 5M7 13l2.5 5m6-5v6a2 2 0 01-2 2H9a2 2 0 01-2-2v-6m8 0V9a2 2 0 00-2-2H9a2 2 0 00-2 2v4.01"></path>
+                    </svg>
+                    <span class="absolute -top-1 -right-1 bg-blue-600 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">3</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="gradient-bg text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6">
+                    Professional Printing
+                    <span class="block text-blue-200">Made Simple</span>
+                </h1>
+                <p class="text-xl md:text-2xl text-blue-100 mb-8 max-w-3xl mx-auto">
+                    High-quality custom printing for businesses and individuals. 
+                    Fast turnaround, competitive pricing, and exceptional service.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <button class="bg-white text-blue-600 hover:bg-gray-100 font-semibold py-3 px-8 rounded-lg text-lg transition-colors">
+                        Start Your Order
+                    </button>
+                    <button class="border-2 border-white text-white hover:bg-white hover:text-blue-600 font-semibold py-3 px-8 rounded-lg text-lg transition-colors">
+                        View Business Cards
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project Overview -->
+    <div class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">
+                    PrintPro - Custom Online Printing Platform
+                </h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    This is a complete React-based frontend for a custom online printing platform similar to UPrinting. 
+                    The application is fully functional with product catalog, customization, and cart management.
+                </p>
+            </div>
+
+            <!-- Features Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                <div class="bg-gray-50 rounded-lg p-6">
+                    <div class="text-blue-600 text-3xl mb-4">🛍️</div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Product Catalog</h3>
+                    <p class="text-gray-600">Browse products by category with filtering, search, and responsive grid layout.</p>
+                </div>
+                <div class="bg-gray-50 rounded-lg p-6">
+                    <div class="text-blue-600 text-3xl mb-4">⚙️</div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Customization</h3>
+                    <p class="text-gray-600">Dynamic product customization with real-time pricing updates and file upload.</p>
+                </div>
+                <div class="bg-gray-50 rounded-lg p-6">
+                    <div class="text-blue-600 text-3xl mb-4">🛒</div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Shopping Cart</h3>
+                    <p class="text-gray-600">Full cart management with quantity controls, pricing, and checkout flow.</p>
+                </div>
+            </div>
+
+            <!-- Setup Instructions -->
+            <div class="bg-blue-50 rounded-lg p-8">
+                <h3 class="text-2xl font-bold text-gray-900 mb-4">🚀 Getting Started</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <h4 class="font-semibold text-gray-900 mb-2">Prerequisites:</h4>
+                        <ul class="text-gray-600 space-y-1">
+                            <li>• Node.js (LTS version)</li>
+                            <li>• npm or yarn</li>
+                            <li>• Modern web browser</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-gray-900 mb-2">Quick Start:</h4>
+                        <div class="bg-gray-800 text-green-400 p-4 rounded-lg text-sm font-mono">
+                            <div>npm install</div>
+                            <div>npm start</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-6">
+                    <p class="text-gray-600">
+                        <strong>Note:</strong> This is a static demo. To see the full interactive application, 
+                        please install Node.js and follow the setup instructions in <code class="bg-gray-200 px-2 py-1 rounded">SETUP_INSTRUCTIONS.md</code>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project Structure -->
+    <div class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">📁 Project Structure</h2>
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <div class="font-mono text-sm">
+                    <div class="text-blue-600">frontend/</div>
+                    <div class="ml-4">
+                        <div class="text-blue-600">├── public/</div>
+                        <div class="ml-8">├── index.html</div>
+                        <div class="text-blue-600">├── src/</div>
+                        <div class="ml-8">
+                            <div class="text-blue-600">├── components/</div>
+                            <div class="ml-8">
+                                <div>├── Navbar.js</div>
+                                <div>├── ProductCard.js</div>
+                                <div>└── CategorySidebar.js</div>
+                            </div>
+                            <div class="text-blue-600">├── context/</div>
+                            <div class="ml-8">└── CartContext.js</div>
+                            <div class="text-blue-600">├── data/</div>
+                            <div class="ml-8">└── mockData.js</div>
+                            <div class="text-blue-600">├── pages/</div>
+                            <div class="ml-8">
+                                <div>├── Home.js</div>
+                                <div>├── Catalog.js</div>
+                                <div>├── Customize.js</div>
+                                <div>└── Cart.js</div>
+                            </div>
+                            <div>├── App.js</div>
+                            <div>├── index.js</div>
+                            <div>└── index.css</div>
+                        </div>
+                        <div>├── package.json</div>
+                        <div>├── tailwind.config.js</div>
+                        <div>├── README.md</div>
+                        <div>└── SETUP_INSTRUCTIONS.md</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Features List -->
+    <div class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">✨ Key Features</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">🎨 UI/UX Features</h3>
+                    <ul class="space-y-2 text-gray-600">
+                        <li>• Responsive design for all devices</li>
+                        <li>• Modern Tailwind CSS styling</li>
+                        <li>• Smooth animations and transitions</li>
+                        <li>• Professional color scheme</li>
+                        <li>• Intuitive navigation</li>
+                        <li>• Loading states and error handling</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">⚡ Technical Features</h3>
+                    <ul class="space-y-2 text-gray-600">
+                        <li>• React 18 with hooks</li>
+                        <li>• React Router for navigation</li>
+                        <li>• Context API for state management</li>
+                        <li>• Dynamic pricing system</li>
+                        <li>• File upload functionality</li>
+                        <li>• Cart persistence</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-gray-300">
+                PrintPro - Professional printing made simple! 🎨✨
+            </p>
+            <p class="text-sm text-gray-400 mt-2">
+                This is a demo of a React-based printing platform frontend
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
